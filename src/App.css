@@ -1,5 +1,127 @@
-body {
-  background-color: #7159c1;
-  color: #fff;
+* {
+  margin: 0;
+  padding: 0;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ================= Header =================== */
+header {
+  background-color: #4a90e2;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+header img {
+  height: 80px;
+  width: 300px;
+}
+
+header div.perfil p,
+header div.perfil i {
+  font-size: 18pt;
+  color: white;
+  margin-left: 25px;
+}
+header div.perfil i {
+  font-size: 30pt;
+}
+
+.perfil {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* ================= Feed =================== */
+
+.feed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.post {
+  padding: 30px;
+  border-radius: 10px;
+  width: 55vw;
+  height: auto;
+  background-color: #f2f2f2;
+  margin-top: 35px;
+  -webkit-box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.25);
+}
+
+/* ================= Post =================== */
+.post .conteudo {
+  display: flex;
+  flex-direction: row;
+}
+
+.post .conteudo img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+}
+
+.post .texto {
+  display: block;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.post .texto .nome {
+  font-size: 20pt;
+  font-weight: 600;
+}
+
+.post .texto .data {
+  font-size: 16pt;
+  font-weight: 100;
+  color: #a3a3a3;
+  margin-top: 10px;
+}
+
+.postContent {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 18pt;
+}
+
+hr {
+  color: white;
+  background-color: #ffffff;
+  height: 1;
+}
+
+/* ================= Comentário =================== */
+.comentario {
+  display: flex;
+  margin-top: 10px;
+}
+
+.comentario img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.comentario .texto {
+  background-color: #e7e2e2;
+  padding: 15px;
+  border-radius: 20px;
+  width: 100%;
+  font-size: 13pt;
+}
+
+.comentario .texto .nome {
+  display: inline;
+  font-size: 13pt;
+  margin-right: 5px;
 }
